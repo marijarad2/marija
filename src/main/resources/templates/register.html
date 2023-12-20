@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>SoSpri-the-page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/pr_bbw.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- Für Progressbar balken: -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script>
+    $(function() {
+      $("#includedHeader").load("fragments/header.html"); 
+      $("#includedFooter").load("fragments/footer.html");
+    });
+
+    function togglePassword() {
+    var passwordField = document.getElementById("form_password");
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+    } else {
+      passwordField.type = "password";
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div id="includedHeader"></div>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div>
+            <h4 style="margin-top: 30px">Register</h4>
+            <div class="row">
+              <div class=" col-lg-8 col-lg-offset-2">
+                <form id="register-form" method="post" action="" role="form" th:action="@{/get-register}" th:object="${registerMember}">
+                  <div class="messages"></div>
+                  <div class="controls">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_name">Firstname *</label>
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required." th:field="*{prename}">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_lastname">Lastname *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required."
+                            th:field="*{lastname}">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                           <!-- Passwort mit sonderzeichen etc hier: -->
+                          <label for="form_password">Password *</label>
+                          <input id="form_password" type="password" name="password" class="form-control" placeholder="Please enter your password *" required="required"
+                            data-error="Valid password is required." th:field="*{password}"
+                            pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=\S+$).{8,}$"
+                            title="Das Passwort muss mindestens 8 Zeichen lang sein und mindestens eine Zahl, einen Großbuchstaben, einen Kleinbuchstaben und ein Sonderzeichen enthalten.">
+                            
+                             <!-- Für den Progressbalken -->
+                            <div class="progress" style="height: 8px;">
+                              <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <button  type="button" onclick="togglePassword()">Show Password</button>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_confirmation">Passwort
+                            confirmation *</label> <input id="form_confirmation" type="password" name="confirmation" class="form-control" placeholder="Please enter your password*" required="required" data-error="Valid confirmation is required."
+                            th:field="*{confirmation}">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" value="Register">
+                        <p></p>
+                      </div>
+                    </div>
+                 
+                    <!-- 
+                    <div>
+                      <div class = "row">
+                        <div class="g-recaptcha col-sm-5" data-sitekey="6LeqffUlAAAAAGca7yKIkiOaZuD3hbOzhbatnR0g"></div>
+                        <span id="captchaError" class="alert alert-danger col-sm-4" style="display: none;"></span>
+                      </div>
+                    </div>
+                  -->
+                    <div class="row">
+                      <div class="col-md-12">
+
+                        <ul>
+                          <li>Minimum 8 characters in length</li>
+                          <li>Contains 3/4 of the following items</li>
+                          <ol>
+                            <li>Uppercase Letters</li>
+                            <li>Lowercase Letters</li>
+                            <li>Numbers</li>
+                            <li>Symbols</li>
+                          </ol>
+                        </ul>
+
+                     
+                       <!-- Hier ergänzen thymeleaf -->
+                       <!-- Fehlermeldungen mit rot -->
+                        <b style="color:red"
+                        th:if="${#fields.hasErrors('prename')}" th:errors="*{prename}"> Prename Error</b> 
+                        <b style="color:red"
+                        th:if="${#fields.hasErrors('lastname')}" th:errors="*{surname}">surname Error</b> 
+                        <b style="color:red"
+                        th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</b> 
+                        <b style="color:red"
+                        th:if="${#fields.hasErrors('confirmation')}" th:errors="*{confirmation}">Confirmation Error</b> 
+                        <b style="color:red" th:text="*{message}"></b>
+                         
+                        
+                      </div>
+                    </div> 
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div style="height: 200px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript Teil Progressbalken-->
+  <div id="includedFooter"></div>
+</body>
+<script>
+  var progressBar = document.querySelector('.progress-bar');
+  var passwordInput = document.querySelector('#form_password');
+  var regex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=\S+$).{8,}$/;
+
+  passwordInput.addEventListener('input', function () {
+    var password = passwordInput.value;
+    var result = zxcvbn(password);
+    var score = result.score;
+    var width = score * 25;
+    progressBar.style.width = width + '%';
+    progressBar.setAttribute("aria-valuenow", width);
+    progressBar.innerHTML = width + "%";
+
+    if (password.match(regex)) {
+      progressBar.style.width = width + '%';
+    } else {
+      progressBar.style.width = '0%';
+    }
+  });
+</script>
+</script>
+</html>

@@ -1,0 +1,54 @@
+.pr_bg_green {
+  background: green;
+}
+
+.pr_bg_white {
+  background: white;
+}
+
+.pr_border_solid {
+  border-style: solid;
+  border-color: #00ff35;
+}
+
+body {
+  background-color: #F5F5DC; /* Hintergrundfarbe für den inneren Bereich */
+}
+
+.pr_bg_beige{
+  background: #F5F5DC;
+}
+
+
+.pr_text_green {
+  color: #40bd5a;
+}
+
+.pr_center {
+  position: relative;
+  transform: translate(50%, 25%);
+}
+
+.panel-body
+{
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.media-list .media {
+  margin-top: 30px;
+  border-bottom: 1px dotted #eee;
+  padding-bottom: 10px;
+}
+
+.media-list .media {
+  border: none;
+}
+
+.media .pull-left {
+  margin-right: 15px;
+}
+
+.media .pull-right {
+  margin-left: 15px;
+}

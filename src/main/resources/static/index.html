@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SoSpri-the-page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/pr_bbw.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezAzjXsCCo3dMK5ypUoYH5XBkN6Fsb8HTyUnMXjImQ0i7CkMy7z5OT5Ag3Lpi8z1" crossorigin="anonymous">
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container-flex {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .gif-container {
+      max-width: 100%;
+      height: auto;
+      max-height: 100px;
+    }
+
+    .icons-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    .icon {
+      font-size: 0.9em;
+    }
+
+    .icon img {
+      width: 25px;
+      height: auto;
+    }
+
+    .feedback-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .fake-feedback {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 10px;
+      max-width: 400px;
+      text-align: left; /* Adjusted alignment */
+    }
+
+    .stars {
+      color: gold;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $("#includedHeader").load("fragments/header.html");
+      $("#includedFooter").load("fragments/footer.html");
+    });
+  </script>
+</head>
+
+<body>
+  <div id="includedHeader"></div>
+
+  <div class="container-flex" style="margin-top:30px">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>MarijaBnb</h2>
+        <br>
+        <p>
+          <cite>Wo Gastfreundschaft auf einzigartige Weise zum Leben erweckt wird, und Reisende ein Zuhause fernab von Zuhause finden.</cite>
+        </p>
+        <p>
+          MarijaBnb ist ein charmantes Rückzugsort, inspiriert von der Gastfreundschaft und dem Komfort eines Zuhause.
+        </p>
+        <p>
+          Unsere Unterkünfte bieten eine einladende Atmosphäre, in der sich Reisende wie Einheimische fühlen können. Mit einer Vielzahl sorgfältig ausgewählter Unterkünfte ermöglichen wir unseren Gästen ein authentisches und unvergessliches Reiseerlebnis.
+        </p>
+        <p>
+          MarijaBnb verbindet Menschen durch ein Online-Portal, das Buchungen und Vermietungen nahtlos und unkompliziert gestaltet. Entdecke mit uns die Schönheit des Reisens und erlebe ein Zuhause fernab von Zuhause. Willkommen bei MarijaBnb – wo Gastfreundschaft auf eine einzigartige Art zum Leben erweckt wird.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="icons-container">
+    <div class="icon"><img src="./img/aussicht.png" alt="Handtücher"><br>Aussicht</div>
+    <div class="icon"><img src="./img/garten.png" alt="Getränke"><br>Garten</div>
+    <div class="icon"><img src="./img/gastfreundschaft.png" alt="Tourismusticket"><br>Gastfreundschaft</div>
+    <div class="icon"><img src="./img/mahlzeit.png" alt="Service"><br>Service</div>
+    <div class="icon"><img src="./img/wifi-signal.png" alt="Wifi"><br>Wifi</div>
+  </div>
+
+  <div class="feedback-container">
+    <div class="fake-feedback">
+      <p>This place is amazing! The service was outstanding, and the view from my room was breathtaking.</p>
+      <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+    </div>
+
+    <div class="fake-feedback">
+      <p>Great experience! The garden was so beautiful, and the staff was friendly and helpful.</p>
+      <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+    </div>
+
+    <div class="fake-feedback">
+      <p>Wonderful stay! The hospitality exceeded my expectations, and the meals were delicious.</p>
+      <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+    </div>
+  </div>
+
+  <div class="container-flex">
+    <iframe src="https://giphy.com/embed/P6ActZ0b2TBcaMbynC" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://www.booking.com/index.de.html?aid=2311236;label=de-ch-booking-desktop-AwtDBrnbKfbY5w*nVlwfWAS652829000584:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-65526620:lp9186614:li:dec:dm;ws=&gad_source=1&gclid=Cj0KCQiA6vaqBhCbARIsACF9M6k4Tn4zFK5FpxSa-UXcFNoLqCytNJdDM1F4f9ikKCAI47hagYqectsaAicgEALw_wcB"></a></p>
+  </div>
+
+  <div id="includedFooter"></div>
+
+</body>
+
+</html>

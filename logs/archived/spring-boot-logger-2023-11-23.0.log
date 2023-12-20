@@ -1,0 +1,321 @@
+2023-11-23 07:38:30,107 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on U342556 with PID 14088 (C:\modul183\SoSpriBasisProjekt_V04\target\classes started by TAARAMAW in C:\modul183\SoSpriBasisProjekt_V04)
+2023-11-23 07:38:30,118 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2023-11-23 07:38:30,180 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in C:\Users\taaramaw\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/taaramaw/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/taaramaw/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/taaramaw/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/taaramaw/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/taaramaw/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/taaramaw/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2023-11-23 07:38:30,180 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-23 07:38:30,180 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-23 07:38:31,094 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-23 07:38:31,195 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 92ms. Found 2 JPA repository interfaces.
+2023-11-23 07:38:31,910 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-11-23 07:38:31,931 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-23 07:38:31,933 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-11-23 07:38:31,933 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-11-23 07:38:32,047 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-11-23 07:38:32,049 DEBUG org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2023-11-23 07:38:32,050 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1870 ms
+2023-11-23 07:38:32,205 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-11-23 07:38:32,432 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-11-23 07:38:32,432 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2023-11-23 07:38:32,699 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-23 07:38:32,813 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.12.Final
+2023-11-23 07:38:32,983 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-11-23 07:38:33,113 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-23 07:38:33,773 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-23 07:38:33,782 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-23 07:38:33,797 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-11-23 07:38:34,247 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-23 07:38:34,480 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26db8988, org.springframework.security.web.context.SecurityContextPersistenceFilter@738cf4db, org.springframework.security.web.header.HeaderWriterFilter@32ec54ab, org.springframework.security.web.csrf.CsrfFilter@4c0cef3e, org.springframework.security.web.authentication.logout.LogoutFilter@7778c15e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a339e90, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a9c6f98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e782d91, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3741da3c, org.springframework.security.web.session.SessionManagementFilter@5a1107e0, org.springframework.security.web.access.ExceptionTranslationFilter@140707f0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@357d07e]
+2023-11-23 07:38:34,673 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-23 07:38:34,683 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-23 07:38:34,746 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 13 mappings in 'requestMappingHandlerMapping'
+2023-11-23 07:38:34,748 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [static/index.html]
+2023-11-23 07:38:34,784 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-23 07:38:34,798 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-23 07:38:35,022 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-23 07:38:35,064 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-11-23 07:38:35,140 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-23 07:38:35,146 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 5.543 seconds (JVM running for 6.207)
+2023-11-23 07:38:40,971 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-23 07:38:40,972 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-11-23 07:38:40,973 DEBUG org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Detected StandardServletMultipartResolver
+2023-11-23 07:38:40,983 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-23 07:38:40,985 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 12 ms
+2023-11-23 07:38:41,024 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-2] GET "/", parameters={}
+2023-11-23 07:38:41,048 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8080-exec-2] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8]
+2023-11-23 07:38:41,048 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8080-exec-2] View [InternalResourceView], model {}
+2023-11-23 07:38:41,048 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8080-exec-2] Forwarding to [index.html]
+2023-11-23 07:38:41,048 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-2] "FORWARD" dispatch for GET "/index.html", parameters={}
+2023-11-23 07:38:41,063 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 07:38:41,071 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Exiting from "FORWARD" dispatch, status 200
+2023-11-23 07:38:41,079 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2023-11-23 07:38:41,119 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-1] GET "/css/pr_bbw.css", parameters={}
+2023-11-23 07:38:41,119 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-6] GET "/img/aussicht.png", parameters={}
+2023-11-23 07:38:41,120 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-3] GET "/img/garten.png", parameters={}
+2023-11-23 07:38:41,123 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 07:38:41,123 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 07:38:41,123 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 07:38:41,130 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2023-11-23 07:38:41,133 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2023-11-23 07:38:41,134 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2023-11-23 07:38:41,136 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-4] GET "/img/gastfreundschaft.png", parameters={}
+2023-11-23 07:38:41,138 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 07:38:41,139 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-6] GET "/img/mahlzeit.png", parameters={}
+2023-11-23 07:38:41,141 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 07:38:41,148 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2023-11-23 07:38:41,153 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-5] GET "/img/wifi-signal.png", parameters={}
+2023-11-23 07:38:41,156 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2023-11-23 07:38:41,156 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 07:38:41,164 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2023-11-23 07:38:41,312 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-7] GET "/fragments/footer.html", parameters={}
+2023-11-23 07:38:41,312 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-8] GET "/fragments/header.html", parameters={}
+2023-11-23 07:38:41,315 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 07:38:41,315 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 07:38:41,320 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2023-11-23 07:38:41,321 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2023-11-23 07:38:41,327 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-9] GET "/img/marke.png", parameters={}
+2023-11-23 07:38:41,330 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 07:38:41,339 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2023-11-23 07:38:42,375 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-10] GET "/favicon.ico", parameters={}
+2023-11-23 07:38:42,378 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 07:38:42,383 DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler [http-nio-8080-exec-10] Resource not found
+2023-11-23 07:38:42,384 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed 404 NOT_FOUND
+2023-11-23 07:38:42,386 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-10] "ERROR" dispatch for GET "/error", parameters={}
+2023-11-23 07:38:42,390 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-11-23 07:38:42,468 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8080-exec-10] Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-23 07:38:42,477 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-10] Writing [{timestamp=Thu Nov 23 07:38:42 CET 2023, status=404, error=Not Found, message=No message available,  (truncated)...]
+2023-11-23 07:38:42,526 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Exiting from "ERROR" dispatch, status 404
+2023-11-23 08:33:50,604 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application on U342556 with PID 24640 (C:\modul183\SoSpriBasisProjekt_V04\target\classes started by TAARAMAW in C:\modul183\SoSpriBasisProjekt_V04)
+2023-11-23 08:33:50,607 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2023-11-23 08:33:50,672 INFO org.springframework.boot.logging.DeferredLog [restartedMain] The Class-Path manifest attribute in C:\Users\taaramaw\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/taaramaw/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/taaramaw/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/taaramaw/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/taaramaw/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/taaramaw/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/taaramaw/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2023-11-23 08:33:50,672 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-23 08:33:50,672 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-23 08:33:51,574 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-23 08:33:51,639 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 55ms. Found 2 JPA repository interfaces.
+2023-11-23 08:33:52,420 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-11-23 08:33:52,436 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-11-23 08:33:52,436 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-11-23 08:33:52,448 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.31]
+2023-11-23 08:33:52,576 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-11-23 08:33:52,576 DEBUG org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2023-11-23 08:33:52,576 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1904 ms
+2023-11-23 08:33:52,725 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-11-23 08:33:53,002 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-11-23 08:33:53,015 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console/'. Database available at 'jdbc:h2:mem:chatdb'
+2023-11-23 08:33:53,343 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-23 08:33:53,443 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.12.Final
+2023-11-23 08:33:53,591 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-11-23 08:33:53,728 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-11-23 08:33:54,299 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-23 08:33:54,299 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-23 08:33:54,321 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2023-11-23 08:33:54,983 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-23 08:33:55,322 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76eed93e, org.springframework.security.web.context.SecurityContextPersistenceFilter@561f9987, org.springframework.security.web.header.HeaderWriterFilter@43e9d9f7, org.springframework.security.web.csrf.CsrfFilter@50017bc3, org.springframework.security.web.authentication.logout.LogoutFilter@20ce69ec, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@10d11b44, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@443363ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30e544e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63fdee38, org.springframework.security.web.session.SessionManagementFilter@59bbc4c, org.springframework.security.web.access.ExceptionTranslationFilter@3a31f216, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68b6c998]
+2023-11-23 08:33:55,574 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2023-11-23 08:33:55,574 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-23 08:33:55,709 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [restartedMain] 13 mappings in 'requestMappingHandlerMapping'
+2023-11-23 08:33:55,716 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [static/index.html]
+2023-11-23 08:33:55,756 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-23 08:33:55,774 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-23 08:33:56,145 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2023-11-23 08:33:56,221 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-11-23 08:33:56,312 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Pausing ProtocolHandler ["http-nio-8080"]
+2023-11-23 08:33:56,312 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2023-11-23 08:33:56,329 WARN org.apache.juli.logging.DirectJDKLog [restartedMain] The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1674)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1589)
+2023-11-23 08:33:56,333 WARN org.apache.juli.logging.DirectJDKLog [restartedMain] The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1674)
+ java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1589)
+2023-11-23 08:33:56,338 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping ProtocolHandler ["http-nio-8080"]
+2023-11-23 08:33:56,339 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Destroying ProtocolHandler ["http-nio-8080"]
+2023-11-23 08:33:56,347 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-11-23 08:33:56,354 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-11-23 08:33:56,365 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [restartedMain] Invocation of destroy method failed on bean with name 'tomcatMetricsBinder': java.lang.NullPointerException: Cannot invoke "io.micrometer.core.instrument.binder.tomcat.TomcatMetrics.close()" because "this.tomcatMetrics" is null
+2023-11-23 08:33:56,366 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-11-23 08:33:56,371 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-23 08:33:56,592 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [restartedMain] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Die Datenbank wurde bereits geschlossen (um das automatische Schliessen beim Stopp der VM zu deaktivieren, die Datenbank URL mit ";DB_CLOSE_ON_EXIT=FALSE" ergänzen)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2023-11-23 08:33:56,596 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2023-11-23 08:33:56,908 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2023-11-23 08:33:58,935 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-4] GET "/", parameters={}
+2023-11-23 08:33:58,943 DEBUG org.springframework.web.servlet.view.ContentNegotiatingViewResolver [http-nio-8080-exec-4] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8]
+2023-11-23 08:33:58,943 DEBUG org.springframework.web.servlet.view.AbstractView [http-nio-8080-exec-4] View [InternalResourceView], model {}
+2023-11-23 08:33:58,943 DEBUG org.springframework.web.servlet.view.InternalResourceView [http-nio-8080-exec-4] Forwarding to [index.html]
+2023-11-23 08:33:58,953 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-4] "FORWARD" dispatch for GET "/index.html", parameters={}
+2023-11-23 08:33:58,956 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:33:59,002 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-4] Exiting from "FORWARD" dispatch, status 200
+2023-11-23 08:33:59,010 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2023-11-23 08:33:59,048 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-5] GET "/img/aussicht.png", parameters={}
+2023-11-23 08:33:59,068 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-6] GET "/css/pr_bbw.css", parameters={}
+2023-11-23 08:33:59,070 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-7] GET "/img/garten.png", parameters={}
+2023-11-23 08:33:59,074 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:33:59,072 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:33:59,075 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:33:59,079 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2023-11-23 08:33:59,082 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2023-11-23 08:33:59,090 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-9] GET "/img/mahlzeit.png", parameters={}
+2023-11-23 08:33:59,090 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-8] GET "/img/gastfreundschaft.png", parameters={}
+2023-11-23 08:33:59,092 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:33:59,095 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:33:59,106 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2023-11-23 08:33:59,108 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2023-11-23 08:33:59,112 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-10] GET "/img/wifi-signal.png", parameters={}
+2023-11-23 08:33:59,115 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:33:59,116 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2023-11-23 08:33:59,122 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed 200 OK
+2023-11-23 08:33:59,218 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-1] GET "/fragments/footer.html", parameters={}
+2023-11-23 08:33:59,218 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-2] GET "/fragments/header.html", parameters={}
+2023-11-23 08:33:59,221 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:33:59,224 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:33:59,242 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2023-11-23 08:33:59,272 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2023-11-23 08:33:59,294 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-2] GET "/img/marke.png", parameters={}
+2023-11-23 08:33:59,296 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:33:59,304 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2023-11-23 08:33:59,749 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-5] GET "/favicon.ico", parameters={}
+2023-11-23 08:33:59,752 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:33:59,754 DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler [http-nio-8080-exec-5] Resource not found
+2023-11-23 08:33:59,754 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Completed 404 NOT_FOUND
+2023-11-23 08:33:59,760 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-5] "ERROR" dispatch for GET "/error", parameters={}
+2023-11-23 08:33:59,764 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-11-23 08:33:59,766 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8080-exec-5] Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-23 08:33:59,768 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-5] Writing [{timestamp=Thu Nov 23 08:33:59 CET 2023, status=404, error=Not Found, message=No message available,  (truncated)...]
+2023-11-23 08:33:59,775 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Exiting from "ERROR" dispatch, status 404
+2023-11-23 08:37:03,739 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-8] GET "/unterkunft.html", parameters={}
+2023-11-23 08:37:03,739 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:03,778 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2023-11-23 08:37:03,809 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-1] GET "/img/kueche_wohnraum1.jpg", parameters={}
+2023-11-23 08:37:03,809 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-6] GET "/css/pr_bbw.css", parameters={}
+2023-11-23 08:37:03,810 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-10] GET "/img/zimmer.jpg", parameters={}
+2023-11-23 08:37:03,812 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:03,812 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:03,812 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:03,812 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2023-11-23 08:37:03,830 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2023-11-23 08:37:03,830 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-2] GET "/img/badezimmer.jpg", parameters={}
+2023-11-23 08:37:03,832 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-3] GET "/img/fernseher.jpg", parameters={}
+2023-11-23 08:37:03,833 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:03,834 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:03,835 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed 200 OK
+2023-11-23 08:37:03,846 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-7] GET "/fragments/footer.html", parameters={}
+2023-11-23 08:37:03,846 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-4] GET "/fragments/header.html", parameters={}
+2023-11-23 08:37:03,848 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:03,848 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:03,852 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2023-11-23 08:37:03,853 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2023-11-23 08:37:03,853 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2023-11-23 08:37:03,857 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-5] GET "/img/marke.png", parameters={}
+2023-11-23 08:37:03,863 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:03,864 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2023-11-23 08:37:03,864 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2023-11-23 08:37:17,043 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-9] GET "/contact.html", parameters={}
+2023-11-23 08:37:17,047 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:17,090 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2023-11-23 08:37:17,107 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-8] GET "/css/pr_bbw.css", parameters={}
+2023-11-23 08:37:17,109 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-1] GET "/img/instagram.svg", parameters={}
+2023-11-23 08:37:17,109 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-6] GET "/img/facebook.svg", parameters={}
+2023-11-23 08:37:17,110 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:17,112 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:17,112 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:17,115 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2023-11-23 08:37:17,124 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-3] GET "/img/whatsapp.svg", parameters={}
+2023-11-23 08:37:17,124 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-10] GET "/img/twitter.svg", parameters={}
+2023-11-23 08:37:17,127 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:17,128 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:17,134 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2023-11-23 08:37:17,137 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2023-11-23 08:37:17,147 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-4] GET "/fragments/header.html", parameters={}
+2023-11-23 08:37:17,148 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-7] GET "/fragments/footer.html", parameters={}
+2023-11-23 08:37:17,151 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:17,151 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed 200 OK
+2023-11-23 08:37:17,151 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:17,153 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2023-11-23 08:37:17,156 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2023-11-23 08:37:17,158 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2023-11-23 08:37:17,163 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-2] GET "/img/marke.png", parameters={}
+2023-11-23 08:37:17,165 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:17,174 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2023-11-23 08:37:32,490 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-5] GET "/index.html", parameters={}
+2023-11-23 08:37:32,494 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:32,498 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2023-11-23 08:37:32,522 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-9] GET "/css/pr_bbw.css", parameters={}
+2023-11-23 08:37:32,524 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-1] GET "/img/garten.png", parameters={}
+2023-11-23 08:37:32,524 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-8] GET "/img/aussicht.png", parameters={}
+2023-11-23 08:37:32,525 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:32,525 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:32,525 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:32,533 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2023-11-23 08:37:32,528 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2023-11-23 08:37:32,534 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2023-11-23 08:37:32,535 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-8] GET "/img/gastfreundschaft.png", parameters={}
+2023-11-23 08:37:32,540 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-6] GET "/img/mahlzeit.png", parameters={}
+2023-11-23 08:37:32,540 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:32,542 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:32,545 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-10] GET "/img/wifi-signal.png", parameters={}
+2023-11-23 08:37:32,548 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:32,548 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2023-11-23 08:37:32,548 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2023-11-23 08:37:32,554 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-8] GET "/fragments/header.html", parameters={}
+2023-11-23 08:37:32,554 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-3] GET "/fragments/footer.html", parameters={}
+2023-11-23 08:37:32,556 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:32,556 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed 200 OK
+2023-11-23 08:37:32,557 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:32,563 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2023-11-23 08:37:32,564 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2023-11-23 08:37:32,587 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-4] GET "/img/marke.png", parameters={}
+2023-11-23 08:37:32,593 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:37:32,601 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2023-11-23 08:40:55,522 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-9] GET "/unterkunft.html", parameters={}
+2023-11-23 08:40:55,526 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:40:55,571 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2023-11-23 08:40:55,586 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-6] GET "/css/pr_bbw.css", parameters={}
+2023-11-23 08:40:55,588 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:40:55,589 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-3] GET "/img/kueche_wohnraum1.jpg", parameters={}
+2023-11-23 08:40:55,589 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-10] GET "/img/zimmer.jpg", parameters={}
+2023-11-23 08:40:55,592 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:40:55,592 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-10] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:40:55,611 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2023-11-23 08:40:55,611 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2023-11-23 08:40:55,617 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-10] Completed 200 OK
+2023-11-23 08:40:55,617 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-3] GET "/img/badezimmer.jpg", parameters={}
+2023-11-23 08:40:55,621 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:40:55,626 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-8] GET "/img/fernseher.jpg", parameters={}
+2023-11-23 08:40:55,630 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:40:55,633 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-4] GET "/fragments/header.html", parameters={}
+2023-11-23 08:40:55,636 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-7] GET "/fragments/footer.html", parameters={}
+2023-11-23 08:40:55,636 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:40:55,642 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:40:55,651 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2023-11-23 08:40:55,652 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2023-11-23 08:40:55,664 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2023-11-23 08:40:55,666 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2023-11-23 08:40:55,700 DEBUG org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-1] GET "/img/marke.png", parameters={}
+2023-11-23 08:40:55,702 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-11-23 08:40:55,710 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK

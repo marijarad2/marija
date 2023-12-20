@@ -1,0 +1,60 @@
+<!-- logout.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>SoSpri-the-page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/pr_bbw.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- Für Progressbar balken: -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+
+  <script>
+    $(function () {
+      $("#includedHeader").load("fragments/header.html");
+      $("#includedFooter").load("fragments/footer.html");
+    });
+  </script>
+</head>
+
+<!-- vom register -->
+<body>
+  <div id="includedHeader"></div>
+  <section>
+    <div class="container">
+      <div id='stars'></div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div>
+            <h4 style="margin-top: 30px">Logout</h4>
+            <div class="row">
+              <div class=" col-lg-8 col-lg-offset-2">
+                <form id="login-form" method="post" role="form" th:action="@{/logout}">
+                  <p style="color:green">Are you sure you want logout?</p>
+                  <div class="messages"></div>
+                  <div class="controls">
+                    <div class="row">
+                      <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send" value="Logout">
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div style="height: 200px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="includedFooter"></div>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Unterkunft - MarijaBnb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/pr_bbw.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Füge hier ggf. weitere CSS-Stile hinzu */
+    .image-container {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 300px; /* Maximalbreite der Bilder */
+      height: auto;
+      cursor: pointer;
+    }
+
+    .image-text {
+      display: none;
+    }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Zentriert die Elemente horizontal */
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      margin-bottom: 10px; /* Abstand zwischen den Elementen */
+    }
+
+    .checklist-item span {
+      margin-left: 5px;
+    }
+
+
+    .welcome-container {
+      font-size: 14px;
+      margin-top: 20px; /* Abstand nach oben */
+      margin-bottom: 20px; /* Abstand nach unten */
+    }
+  </style>
+  <script>
+    $(function () {
+      $("#includedHeader").load("fragments/header.html");
+      $("#includedFooter").load("fragments/footer.html");
+    });
+
+    function toggleText(imageId) {
+      var textElement = document.getElementById(imageId + "-text");
+      textElement.style.display = (textElement.style.display === 'none') ? 'block' : 'none';
+    }
+  </script>
+</head>
+
+<body>
+  <div id="includedHeader"></div>
+
+  <div class="container" style="margin-top:30px">
+    <div class="row">
+      <div class="welcome-container">
+        <h1><strong>Herzlich Willkommen in unserer charmanten Unterkunft!</strong></h1></div>
+      <div class="col-md-6">
+      
+
+        <p>Entdecken Sie das einladende Ambiente unserer gemütlichen Wohnung, die sich perfekt für Reisende eignet, die auf der Suche nach einer komfortablen und gastfreundlichen Bleibe sind.</p>
+
+        <p>Unsere Unterkunft besteht aus zwei liebevoll gestalteten Zimmern, die allen Ihren Bedürfnissen gerecht werden. Das erste Zimmer bietet Platz für zwei Personen und strahlt eine warme und einladende Atmosphäre aus. Hier können Sie sich entspannen und den Tag in Ruhe ausklingen lassen. Das zweite Zimmer ist zwar kleiner, aber nicht weniger gemütlich und wurde speziell für eine Person gestaltet, um einen ruhigen und privaten Rückzugsort zu bieten.</p>
+
+        <p>Ein Highlight unserer Unterkunft ist das gemeinsame Badezimmer, das modern und komfortabel eingerichtet ist. Hier können Sie sich nach einem erlebnisreichen Tag erfrischen und entspannen.</p>
+
+        <p>Die Küche steht allen Gästen zur Verfügung und lädt dazu ein, gemeinsam kulinarische Genüsse zu erleben. Egal, ob Sie eine Tasse Kaffee am Morgen genießen oder eine köstliche Mahlzeit zubereiten möchten – die voll ausgestattete Küche steht Ihnen offen.</p>
+
+        <p>Wir legen großen Wert darauf, dass sich unsere Gäste wie zu Hause fühlen, und stehen Ihnen gerne zur Verfügung, um Ihren Aufenthalt so angenehm wie möglich zu gestalten. Erleben Sie die Schönheit des Reisens und genießen Sie Ihren Aufenthalt in unserer liebevoll eingerichteten Unterkunft.</p>
+
+        <p>Wir freuen uns darauf, Sie bei uns willkommen zu heißen!</p>
+
+        <p>Herzliche Grüße, MarijaBnb</p>
+      </div>
+
+      <div class="col-md-6">
+    
+        <!-- Bild 1 -->
+        <div class="image-container">
+          <img src="./img/zimmer.jpg" alt="Bild 1" onclick="toggleText('image1')">
+          <div id="image1-text" class="image-text">
+            <p>Zimmer.</p>
+          </div>
+        </div>
+
+        <!-- Bild 2 -->
+        <div class="image-container">
+          <img src="./img/kueche_wohnraum1.jpg" alt="Bild 2" onclick="toggleText('image2')">
+          <div id="image2-text" class="image-text">
+            <p>BKüche</p>
+          </div>
+        </div>
+
+        <!-- Bild 3 -->
+        <div class="image-container">
+          <img src="./img/badezimmer.jpg" alt="Bild 3" onclick="toggleText('image3')">
+          <div id="image3-text" class="image-text">
+            <p>badezimmer</p>
+          </div>
+        </div>
+        <!-- Bild 4 -->
+        <div class="image-container">
+          <img src="./img/fernseher.jpg" alt="Bild 4" onclick="toggleText('image4')">
+          <div id="image4-text" class="image-text">
+            <p>Fernseher</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container" style="margin-bottom: 30px;">
+    <div class="row">
+      <div class="col-md-12">
+  <ul class="checklist">
+    <li class="checklist-item">&#10004; <span>Handtücher</span></li>
+    <li class="checklist-item">&#10004; <span>Getränke</span></li>
+    <li class="checklist-item">&#10004; <span>Tourismusticket</span></li>
+    <li class="checklist-item">&#10004; <span>Föhn</span></li>
+    <li class="checklist-item">&#10004; <span>Fernseher</span></li>
+    <li class="checklist-item">&#10004; <span>WLAN</span></li>
+    <li class="checklist-item">&#10004; <span>Bügeleisen</span></li>
+    <li class="checklist-item">&#10004; <span>Heizung</span></li>
+  </ul>
+</div>
+</div>
+</div>
+
+
+  <div id="includedFooter"></div>
+
+</body>
+
+</html>
