@@ -3,7 +3,7 @@ FROM maven:3.8.6-openjdk-18 AS build
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
-RUN mvn clean install
+RUN mvn clean install 
 
 #stage 2: Run app
 FROM openjdk:18
