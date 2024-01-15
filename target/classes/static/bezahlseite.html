@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bezahlung - MarijaBnb</title>
+  <!-- Fügen Sie hier weitere Stylesheets hinzu, falls nötig -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- Eigenes Stylesheet -->
+  <link rel="stylesheet" href="css/ihrestyles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Bezahlung</h2>
+  <p>Bitte überprüfen Sie Ihre Buchung und fahren Sie mit der Bezahlung fort.</p>
+
+  <!-- PayPal Button Container -->
+  <div id="paypal-button-container"></div>
+
+  <!-- PayPal SDK Script -->
+  <script src="https://www.paypal.com/sdk/js?client-id=IHR_CLIENT_ID&currency=EUR"></script>
+  <script>
+    paypal.Buttons({
+      createOrder: function(data, actions) {
+        // Diese Funktion setzt die Zahlungsdetails fest
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              currency_code: 'EUR',
+              value: '10.00' // Setzen Sie den Betrag der Zahlung
+            }
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        // Diese Funktion wird aufgerufen, wenn der Käufer die Zahlung genehmigt
+        return actions.order.capture().then(function(details) {
+          // Sie könnten hier auch eine AJAX-Anfrage an Ihren Server senden, um die Bestellung zu speichern
+          alert('Zahlung erfolgreich abgeschlossen für ' + details.payer.name.given_name + '!');
+          // Leiten Sie den Nutzer zu einer Bestätigungsseite weiter
+          window.location.href = "bestaetigungsseite.html";
+        });
+      }
+    }).render('#paypal-button-container'); // Der PayPal-Button wird im `paypal-button-container` Div gerendert
+  </script>
+</div>
+
+</body>
+</html>
