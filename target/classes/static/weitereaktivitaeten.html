@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bezahlung - MarijaBnb</title>
+  <!-- Füge hier die restlichen benötigten Meta-Tags und Links hinzu -->
+  <script src="https://www.paypal.com/sdk/js?client-id=Af4AHd7Xd1-HJv43L_3Cw_B68jo9b0_xjvhuVpl3fs_W49b6jEi0wVTVIC4GBpjYors1-u6aiqh0CRDo"></script>
+</head>
+<body>
+
+<div id="payment-section">
+  <h1>Zahlung</h1>
+  <p>Zu bezahlender Betrag: CHF <span id="amount">0</span></p>
+  <div id="paypal-button-container"></div>
+</div>
+
+<script>
+  function displayAmount() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var amount = urlParams.get('amount');
+    document.getElementById('amount').textContent = amount; // Zeigt den Betrag auf der Seite an
+    
+    // Aktualisiere den Wert für die PayPal-Transaktion
+    paypal.Buttons({
+      createOrder: function(data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: amount // Setze den Betrag von der URL
+            }
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+          // Implementiere hier, was nach der Zahlung passieren soll, z.B. eine Bestätigungsnachricht
+          alert('Zahlung erfolgreich abgeschlossen, Käufer: ' + details.payer.name.given_name);
+          // Du könntest den Benutzer auch auf eine Bestätigungsseite weiterleiten oder die Seite aktualisieren
+        });
+      }
+    }).render('#paypal-button-container');
+  }
+  
+  // Rufe die Funktion auf, wenn das Dokument geladen ist
+  document.addEventListener('DOMContentLoaded', displayAmount);
+</script>
+
+</body>
+</html>

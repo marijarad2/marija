@@ -45,13 +45,22 @@
     .checklist-item span {
       margin-left: 5px;
     }
-
+    .additional-options-heading {
+      font-size: 18px; /* Oder eine andere Größe, die dir gefällt */
+      margin-bottom: 15px; /* Abstand nach unten anpassen */
+    }
+    
 
     .welcome-container {
       font-size: 14px;
       margin-top: 20px; /* Abstand nach oben */
       margin-bottom: 20px; /* Abstand nach unten */
     }
+    .additional-options-heading {
+      font-size: 18px; /* Oder eine andere Größe, die dir gefällt */
+      margin-bottom: 15px; /* Abstand nach unten anpassen */
+    }
+    
   </style>
   <script>
     $(function () {
@@ -63,6 +72,8 @@
       var textElement = document.getElementById(imageId + "-text");
       textElement.style.display = (textElement.style.display === 'none') ? 'block' : 'none';
     }
+
+    
   </script>
 </head>
 
@@ -154,6 +165,100 @@
     <li class="checklist-item">&#10004; <span>Heizung</span></li>
   </ul>
 </div>
+<!-- Zusätzliche Optionen Formular -->
+
+  <!-- Zusätzliche Optionen Formular -->
+<!-- Formular für zusätzliche Optionen und Übernachtungen -->
+<div class="container" style="margin-top:30px; text-align: center;">
+  <h2>Wir haben Sie überzeugt?</h2>
+  <h3>Buchen Sie jetzt Ihren Aufenthalt!</h3>
+  <p>
+      Freuen Sie sich auf unvergessliche Tage in unserer gemütlichen Unterkunft. 
+      Ob Sie auf der Durchreise sind, einen erholsamen Urlaub planen oder einfach 
+      eine komfortable Bleibe für Ihre Geschäftsreise suchen – bei uns sind Sie genau richtig. 
+      Genießen Sie die Ruhe und den Komfort unserer liebevoll gestalteten Zimmer und 
+      profitieren Sie von unserer gastfreundlichen Atmosphäre.
+  </p>
+  <p>
+      Wählen Sie einfach die Anzahl der gewünschten Übernachtungen und eventuelle 
+      zusätzliche Optionen unten aus und klicken Sie auf "Offerte generieren", um Ihre Buchung vorzunehmen.
+  </p>
+  <!-- Hier können Sie weitere Elemente wie Buchungsformulare oder Buttons hinzufügen -->
+</div>
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <div class="form-group">
+        <label for="arrival-date">Anreisedatum:</label>
+        <input type="date" id="arrival-date" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="departure-date">Abreisedatum:</label>
+        <input type="date" id="departure-date" class="form-control" required>
+      </div>
+      <form id="additional-options-form">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="5" id="bedding">
+          <label class="form-check-label" for="bedding">Bettwäsche</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="5" id="cleaning">
+          <label class="form-check-label" for="cleaning">Reinigung</label>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="generateOffer()">Offerte generieren</button>
+      </form>
+      <div id="offer-details" style="display:none">
+        <h3>Ihre Offerte:</h3>
+        <div id="offer-details-content"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function generateOffer() {
+    const pricePerNight = 95; // Festpreis pro Nacht
+
+    // Berechnung der Nächte basierend auf An- und Abreisedaten
+    var arrivalDate = new Date(document.getElementById('arrival-date').value);
+    var departureDate = new Date(document.getElementById('departure-date').value);
+    var timeDiff = departureDate.getTime() - arrivalDate.getTime();
+    var nights = Math.ceil(timeDiff / (1000 * 3600 * 24)); // Anzahl der Nächte
+
+    // Überprüfung auf gültige Datumsangaben
+    if(nights <= 0) {
+      alert('Bitte wählen Sie ein gültiges Abreisedatum, das nach dem Anreisedatum liegt.');
+      return;
+    }
+
+    var total = pricePerNight * nights; // Gesamtpreis für Übernachtungen
+    var additionalCosts = 0; // Zusatzkosten für weitere Optionen
+    var checkboxes = document.querySelectorAll('#additional-options-form .form-check-input');
+    
+    // Kalkuliere die Zusatzkosten
+    checkboxes.forEach(function(checkbox) {
+      if(checkbox.checked) {
+        additionalCosts += parseInt(checkbox.value);
+      }
+    });
+
+    total += additionalCosts; // Addiere die Zusatzkosten zum Gesamtpreis
+
+    // Zeige die Offerte an
+    var details = '<p>Anzahl der Nächte: ' + nights + ' x ' + pricePerNight + ' Franken = ' + (pricePerNight * nights) + ' Franken</p>';
+    details += additionalCosts > 0 ? '<p>Zusätzliche Optionen: ' + additionalCosts + ' Franken</p>' : '';
+    details += '<p><strong>Gesamtbetrag: ' + total + ' Franken</strong></p>';
+    details += '<button type="button" class="btn btn-success" onclick="redirectToPayment(' + total + ')">Zur Bezahlung</button>';
+    
+    document.getElementById('offer-details-content').innerHTML = details;
+    document.getElementById('offer-details').style.display = 'block';
+  }
+
+  function redirectToPayment(total) {
+    window.location.href = 'weitereaktivitaeten.html?amount=' + total;
+  }
+</script>
+
+
 </div>
 </div>
 
