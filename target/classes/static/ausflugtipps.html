@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>SoSpri-the-page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/pr_bbw.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script>
+          $(function() {
+            $("#includedHeader").load("fragments/header.html");
+            $("#includedFooter").load("fragments/footer.html");
+          });
+        </script>
+      </head>
+      <div id="includedHeader"></div>
+
+    <title>Ausflugtipps in Zürich</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .ausflug {
+            margin: 20px;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .ausflug img {
+            width: 300px; /* Festgelegte Breite */
+            height: 200px; /* Festgelegte Höhe */
+            object-fit: cover; /* Sorgt dafür, dass das Bild das Element füllt, ohne es zu verzerren */
+        }
+        .ausflug h2 {
+            color: #333;
+        }
+        .ausflug p {
+            font-size: 16px;
+        }
+        .ausflug a {
+            color: blue;
+            text-decoration: none;
+        }
+        .ausflug a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ausflug">
+        <h2>Lindt Schokoladenfabrik</h2>
+        <img src="./img/lindt.jpg" alt="Lindt Schokoladenfabrik">
+        <p>Besuchen Sie die berühmte Lindt Schokoladenfabrik und erleben Sie die köstliche Welt der Schokolade. <a href="https://www.getyourguide.de/s?locale=de&currency=CHF&src=cu&product_id=418788&option_id=759549">Mehr erfahren</a></p>
+    </div>
+
+    <div class="ausflug">
+        <h2>Tuk Tuk Tour durch Zürich</h2>
+        <img src="./img/tuktuk.jpg" alt="Tuk Tuk Tour">
+        <p>Entdecken Sie Zürich auf eine einzigartige Weise mit einer spannenden Tuk Tuk Tour. <a href="https://www.getyourguide.de/s?locale=de&currency=CHF&src=cu&product_id=208551&option_id=324759">Mehr erfahren</a></p>
+    </div>
+
+    <div class="ausflug">
+        <h2>Bootsfahrt auf dem Zürichsee</h2>
+        <img src="./img/boot.jpg" alt="Bootsfahrt Zürichsee">
+        <p>Genießen Sie eine idyllische Bootsfahrt auf dem Zürichsee und bewundern Sie die malerische Landschaft. <a href="https://www.getyourguide.de/s?locale=de&currency=CHF&src=cu&product_id=75865&option_id=
+106990">Mehr erfahren</a></p>
+</div>
+<div id="includedFooter"></div>
+</body>
+</html>
